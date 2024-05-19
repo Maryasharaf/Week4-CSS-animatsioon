@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #9b1da7;
+    overflow: hidden;
+}
+
+.container{
+    width: 45%;
+    margin: 32px auto;
+}
+
+.header {
+    height: 250px;
+    text-align: center;
+}
+
+.header h1{
+    color: wheat;
+    font-size: 3.5rem;
+    font-family: 'Roboto',sans-serif;
+    position: relative; /* top-right-bottom-left*/
+    animation: header;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    /* animation-iteration-count: infinite;*/
+}
+
+@keyframes header {
+    0% {top: -250px;}
+    100% {top: 100px;}
+}
+
+.main {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5;
+}
+
+.text-left {
+    text-align: left;
+    margin-top: 32px;
+    animation-duration: 5s;
+    animation: textLeft;
+    animation-timing-function: ease-in-out;
+    position: relative;
+}
+
+@keyframes textLeft {
+    0%{left: -1000px;}
+    85%{left: 50px;}
+    100%{left: 0;}
+}
+
+.text-right {
+    text-align: right;
+    margin-top: 32px;
+    animation: textRight;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    position: relative;
+}
+
+@keyframes textRight {
+    0%{right: -1000px;}
+    85%{right: 50px;}
+    100%{right: 0;}
+}
+
+.footer {
+    text-align: center;
+}
+
+.btn {
+    opacity: 0;
+    border: 2px solid white;
+    font-size: 2 rem;
+    display: inline-block;
+    margin: 2rem;
+    padding: 1rem;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    border: 2px solid white;
+    animation: aniBtn;
+    animation-duration: 5s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes aniBtn {
+    0% {opacity: 0;} /*0 - 1*/
+    100% {opacity: 1;}
+}
